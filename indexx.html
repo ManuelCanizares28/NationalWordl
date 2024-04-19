@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi primera pagina web</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>National World</h1>
+        <img  class="logo" src="images/logo.png" alt="Mi primer logo">
+        <nav>
+            <!-- Barra de navegacion -->
+            <ul> 
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Noticias</a></li>
+                <li><a href="#">Calendario</a></li>
+                <li><a href="#">Resultados</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+        <!-- Registro -->
+        <button id="showRegistrationForm">Registrarse</button>
+        <div id="registrationFormContainer" class="container" style="display: none;">
+            <h2>Registro</h2>
+            <form id="registrationForm">
+                <label for="username">Nombre de Usuario: </label>
+                <input type="text" id="username" name="username" required>
+                <label for="email">Correo Electronico: </label>
+                <input type="email" id="email" name="email" required>
+                <label for="password">Contraseña: </label>
+                <input type="password" id="password" name="password" required>
+            </form>
+        </div>
+        </header>
+        <!-- Noticias -->
+        <main>
+            <section>
+                <img src="images/jupiter.jpg" alt="Jupiter" class="imagen-jupiter">
+                <a class ="text-title" href="https://www.nationalgeographic.com.es/ciencia/busca-vida-extraterrestre-morado-puede-ser-nuevo-verde_22074">En la búsqueda de vida extraterrestre, el dorado podria ser el nuevo verde.</a>
+                <div class="subtext">Un nuevo estudio plantea buscar vida extrasolar a partir de la detección de bacterias púrpuras en exoplanetas similares a la Tierra.</div>
+                <div class="footer-text">CONSTANZA VACAS</div>
+                </div>
+            </section>
+        </main>
+    <script src="script.js"></script>
+</body>
+</html>
